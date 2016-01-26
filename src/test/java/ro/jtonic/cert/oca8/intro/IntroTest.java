@@ -29,6 +29,9 @@ public class IntroTest {
         }
 
         int dayOfTheWeek = 5;
+
+        int tuesday = 1;
+
         switch(dayOfTheWeek){
             case 0:
                 System.out.println("week day");
@@ -36,6 +39,8 @@ public class IntroTest {
                 System.out.println("other day");
             case 6:
                 System.out.println("saturday");
+//            case tuesday: // compilation error - constant expression required
+//                System.out.println("tuesday");
         }
     }
 
