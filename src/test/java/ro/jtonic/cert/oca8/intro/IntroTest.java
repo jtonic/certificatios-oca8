@@ -42,6 +42,28 @@ public class IntroTest {
 //            case tuesday: // compilation error - constant expression required
 //                System.out.println("tuesday");
         }
+
     }
+
+    @Test
+    public void testXXX() throws Exception {
+        long x = 10;
+        byte y = 11;
+
+        byte a = 1;
+        byte b = 2;
+        // byte z = a + b; this does not compile but the byte z = 1 + 2; DOES!!!
+        // float q = 0.1; THIS DOES NOT COMPILE BUT THE F... long y = 10; DOES!!!
+    }
+
+    @Test
+    public void testStrings(){
+        final String name = "animal";
+//        name.charAt(7);  //RUNTIME: java.lang.StringIndexOutOfBoundsException: String index out of range: 7
+        System.out.printf("'%s'", name.substring(3, 3));
+//        System.out.println(name.substring(3, 2)); //RUNTIME java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+//        System.out.println(name.substring(3, 8)); //RUNTIME java.lang.StringIndexOutOfBoundsException: String index out of range: 8
+    }
+
 
 }
